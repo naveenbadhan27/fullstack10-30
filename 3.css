@@ -1,0 +1,27 @@
+.ac
+{
+	font-size: 50px !important;
+	color: red;
+	font-weight: bold;
+	text-align: justify;
+	text-indent: 100px;
+	text-transform: capitalize;
+	/*text-transform: lowercase;*/
+	/*text-transform: uppercase;*/
+	text-shadow: 2px 2px 5px grey;
+	line-height: 100px;
+	word-spacing: 50px;
+	letter-spacing: 50px;
+}
+.ah
+{
+	font-size: 30px ;
+	/*text-decoration: none;*/
+	/*text-decoration: underline;*/
+	text-decoration: line-through;
+}
+
+#ah
+{
+	font-size: 70px;
+}

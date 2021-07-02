@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+		.ab
+		{
+			height: 100px;
+			width: 100px;
+			background: red;
+			animation: gif 60s linear infinite;
+		}
+		@keyframes gif
+		{
+			20%{
+				background: blue;
+			}
+			40%{
+				background: green;
+			}
+			60%{
+				background: yellow;
+			}
+			80%{
+				background: pink;
+			}
+			100%{
+				background: red;
+			}
+		}
+
+
+		.ac
+		{
+			height: 100px;
+			width: 2px;
+			background: black;
+			margin-left: 50%;
+			animation: rt 2s linear infinite;
+			transform-origin: 100% 0%;
+		}
+		@keyframes rt{
+			100%
+			{
+				transform: rotate(360deg);
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+
+
+<div class="ab">
+</div>
+
+
+<div class="ac"></div>
+
+
+
+</body>
+</html>

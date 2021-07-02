@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css"></style>
+	<style type="text/css">
+		.ab
+		{
+			height: 100px;
+			width: 100px;
+			background: green;
+			border-radius: 50%;
+			box-shadow: 5px 5px 2px 2px blue;
+		}
+		.abc
+		{
+			height: 100px;
+			width: 100px;
+			background: red;
+			/*margin: 100px;*/
+			/*padding: 100px;*/
+			/*margin-top: -50px;*/
+			opacity: 0.9;
+		}
+		.abc:hover
+		{
+			background: maroon;
+			color: white;
+		}
+
+		.parent
+		{
+			height: 300px;
+			width: 300px;
+			background: red;
+		}
+		.child
+		{
+			height: 100px;
+			width: 100px;
+			background: maroon;
+			display: none;
+		}
+
+		.parent:hover .child
+		{
+			display: block;
+			background: green;
+		}
+		.list li
+		{
+			display: inline;
+		}
+
+	</style>
+</head>
+<body>
+
+
+<div class="ab">
+</div>
+<div class="abc">
+	hi
+</div>
+
+<div class="parent">
+	<div class="child">
+		Hello
+	</div>
+</div>
+
+<ul class="list">
+	<li>Home</li>
+	<li>About</li>
+	<li>Contact</li>
+	<li>Gallery</li>
+</ul>
+
+
+
+
+
+
+</body>
+</html>
