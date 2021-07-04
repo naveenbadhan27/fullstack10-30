@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p id="print"></p>
+
+<input type="text" id="name" onkeyup="abcd()" placeholder="Fill your Name">
+<br>
+<p id="print2"></p>
+<br>
+<button type="button" onclick="abc()">Click</button>
+<br>
+<button type="button" ondblclick="abc()">Click</button>
+
+<img id="lm">
+
+
+<!-- 
+
+background-color
+
+background
+
+backgroundColor
+
+
+ -->
+
+<br>
+<input type="number" id="min" placeholder="Min"><br>
+<input type="number" id="max" placeholder="Max"><br>
+<p id="randomprint"></p><br>
+<button type="button" onclick="random()">Gen Random</button><br>
+
+<script type="text/javascript">
+
+	// parseInt
+	// parseFloat
+	// toString
+
+	var t = '100na';
+
+	console.log(t+1);
+
+	console.log(parseInt(t)+1);
+
+	var x = 75;
+	var y = 2;
+
+	console.log(x/y);
+
+	function random(){
+		var min = parseInt(document.getElementById('min').value);
+		var max = parseInt(document.getElementById('max').value);
+		// bodmas
+		var output = Math.floor(Math.random()*(max - min + 1))+min;
+		console.log(output);
+		document.getElementById('randomprint').innerHTML = output;
+	}
+
+
+
+
+	document.getElementById('lm').src='img/36307.jpg';
+	document.getElementById('lm').style.height='100px';
+
+	document.write('Hello');
+	document.getElementById('print').innerHTML = 'Hi, my name is naveen';
+	var ab = 'Hell';
+	var ac = 10;
+	var ad = 10.5;
+	var ae = true;
+
+	function abc(){
+		var name = document.getElementById('name').value;
+		// document.write(name);
+		document.getElementById('print').innerHTML = name;
+		alert('hi')
+	}
+
+	function abcd(){
+		var name = document.getElementById('name').value;
+		document.getElementById('print2').innerHTML = name;
+	}
+
+// =
+// ==
+// ===
+	var a = 10
+	var b = '10'
+	var c = 'hello'
+	var d = 20;
+
+	if (a == b) {
+		if (a === b) {
+			document.write('<br>Value True data type also true <br>');
+		}else
+		{
+			document.write('<br>Value True but data type not true <br>');
+		}
+		// document.write('True');
+	}else{
+		document.write('False');
+	}
+
+	if(a === b)
+	{
+		document.write('true type')
+	}else if(a==b)
+	{
+		document.write('true value')
+	}else
+	{
+		document.write('Nthg')
+	}
+
+
+	for (var i = 0; i < 10; i++) {
+		document.write(i);
+	}
+
+
+	var scores = ['100','150','140','105','170'];
+
+
+	document.write(scores);
+
+	console.log(scores);
+
+	for (var i = 0; i < scores.length; i++) {
+		document.write('<br>'+scores[i]);
+	}
+
+
+	var date = new Date;
+	document.write(date);
+	document.write('<br>'+date.getDate()+' - ');
+	document.write(date.getMonth()+1+' - ');
+	document.write(date.getFullYear());
+	document.write('<br>');
+
+	document.write(Math.random())
+
+	document.write('<br>');
+
+	document.write(Math.floor(Math.random()*1000000))
+
+
+
+
+
+</script>
+<!-- 
+6
+       *
+      * *
+    * * * *
+  * * * * * *
+no of rows - 4
+total sum - 13
+
+5
+
+  		*
+  	  * * *
+  	* * * * *
+
+no of rows - 3
+total sum - 9
+ -->
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+
+<form id="myform">
+<input type="text" id="name">
+<input type="email" id="email">
+<input type="password" id="password">
+
+<img src="">
+<input type="button" onclick="val()" value="Submit">
+</form>
+<script type="text/javascript">
+
+
+// document.getElementByClassName()
+// document.getElementById()
+// document.getElementByName()
+// document.getElementById().src
+
+
+	function val(){
+
+		var a = document.getElementById('name').value;
+		var b = document.getElementById('email').value;
+		var c = document.getElementById('password').value;
+		if (a == '') {
+			alert('Please fill name field');
+			document.getElementById('name').focus();
+		}else if(b == ''){
+			alert('Please fill email field');
+			document.getElementById('email').focus();			
+		}else if(c == ''){
+			alert('Please fill password field');
+			document.getElementById('password').focus();			
+		}else{
+			alert('data inserted')
+			document.getElementById('myform').reset();			
+		}
+	}
+</script>
+
+
+
+
+
+
+</body>
+</html>
