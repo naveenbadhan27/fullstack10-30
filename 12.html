@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.ab
+		{
+			height: 100px;
+			background: red;
+		}
+		.ac
+		{
+			height: 100px;
+			background: blue;
+		}
+		.nv
+		{
+			/*background: maroon !important;*/
+			background: linear-gradient(to bottom,maroon, transparent);
+			border:0px;
+			border-radius: 0px;
+		}
+		.navbar-nav li:hover a
+		{
+			background: linear-gradient(to top, maroon, transparent);
+		}
+		.navbar-nav li a,.navbar-brand
+		{
+			color: white !important;
+		}
+	</style>
+</head>
+<body>
+
+<!-- <nav class="navbar navbar-default"> -->
+<!-- <nav class="navbar navbar-inverse"> -->
+<!-- <nav class="navbar navbar-default nv"> -->
+<nav class="navbar navbar-default navbar-fixed-top nv">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<div class="navbar-brand">Logoo</div>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">Gallery</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href=""><span class="glyphicon glyphicon-user"></span> Login</a></li>
+			<li><a href="" data-toggle="modal" data-target='#myregister'><span class="glyphicon glyphicon-user"></span> Register</a></li>
+		</ul>
+	</div>
+</nav>
+<br><br><br>
+
+
+<div class="modal fade" id="myregister" role='dialog'>
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" data-dismiss="modal">x</button>
+				<p class="modal-title">Register Here</p>
+			</div>
+			<div class="modal-body">
+
+
+
+
+				<div class="row">
+					<div class="col-lg-6 form-group">
+						<input type="text" name="name" placeholder="Fill your Name" class="form-control">
+					</div>
+					<div class="col-lg-6 form-group">
+						<input type="email" name="email" placeholder="Fill your Email" class="form-control">
+					</div>
+					<div class="col-lg-6 form-group">
+						<input type="password" name="password" placeholder="Fill your Password" class="form-control">
+					</div>
+					<div class="col-lg-6 form-group">
+						<select class="form-control">
+							<option>Male</option>
+							<option>Female</option>
+						</select>
+					</div>
+					<div class="col-lg-6 form-group">
+						<input type="date" name="date" class="form-control">
+					</div>
+					<div class="col-lg-6 form-group">
+						<input type="time" name="time" class="form-control">
+					</div>
+					<div class="col-lg-12 form-group">
+						<input type="submit" name="submit" class="btn btn-info">
+					</div>
+				</div>
+
+
+
+
+		<table class="table table-hover table-bordered table-striped">
+			<tr class="success">
+				<td>Sno</td>
+				<td>Name</td>
+				<td>Class</td>
+				<td>Roll</td>
+				<td>Subject</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Naa</td>
+				<td>5</td>
+				<td>2</td>
+				<td>hindi</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Abc</td>
+				<td>5</td>
+				<td>3</td>
+				<td>Punjabi</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container">
+	<div class="ab col-lg-5">
+	</div>
+	<div class="ac col-lg-5 col-lg-offset-2">
+	</div>
+</div>
+
+<!-- 
+danger
+warning
+success
+info
+
+primary
+default
+ -->
+
+
+<!-- 
+data-toggle
+data-target
+data-dismiss
+ -->
+
+<div class="col-lg-12">
+	
+	<div class="col-lg-6">
+			
+
+		<div class="col-lg-12">
+			
+
+			<div class="dropdown">
+				<button class="btn btn-danger" data-toggle='dropdown'>Drop down <span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">Gallery</a></li>
+				</ul>
+			</div>
+
+
+			<button class="btn btn-info" data-toggle='collapse' data-target='#abc'>Collapse</button>
+
+			<div class="collapse" id="abc">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+
+
+
+
+		</div>
+
+
+
+
+
+
+				<div class="row">
+					<div class="col-lg-6 form-group">
+						<input type="text" name="name" placeholder="Fill your Name" class="form-control">
+					</div>
+					<div class="col-lg-6 form-group">
+						<input type="email" name="email" placeholder="Fill your Email" class="form-control">
+					</div>
+					<div class="col-lg-6 form-group">
+						<input type="password" name="password" placeholder="Fill your Password" class="form-control">
+					</div>
+					<div class="col-lg-6 form-group">
+						<select class="form-control">
+							<option>Male</option>
+							<option>Female</option>
+						</select>
+					</div>
+					<div class="col-lg-6 form-group">
+						<input type="date" name="date" class="form-control">
+					</div>
+					<div class="col-lg-6 form-group">
+						<input type="time" name="time" class="form-control">
+					</div>
+					<div class="col-lg-12 form-group">
+						<input type="submit" name="submit" class="btn btn-info">
+					</div>
+				</div>
+
+
+		<table class="table table-hover table-bordered table-striped">
+			<tr class="success">
+				<td>Sno</td>
+				<td>Name</td>
+				<td>Class</td>
+				<td>Roll</td>
+				<td>Subject</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Naa</td>
+				<td>5</td>
+				<td>2</td>
+				<td>hindi</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Abc</td>
+				<td>5</td>
+				<td>3</td>
+				<td>Punjabi</td>
+			</tr>
+		</table>
+
+		<button class="btn">Click</button>
+
+		<button class="btn btn-danger">Click</button>
+		<button class="btn btn-success">Click</button>
+		<button class="btn btn-info">Click</button>
+		<button class="btn btn-warning">Click</button>
+		<button class="btn btn-primary">Click</button>
+		<button class="btn btn-link">Click</button>
+		<button class="btn btn-default">Click</button>
+
+		<button class="btn btn-danger btn-lg">Click</button>
+		<button class="btn btn-danger btn-md">Click</button>
+		<button class="btn btn-danger btn-sm">Click</button>
+		<button class="btn btn-danger btn-xs">Click</button>
+
+
+		<!-- <button class="btn"><a href="">click</a></button> -->
+		<div class="btn-group">
+			<a href="" class="btn btn-danger">Click</a>
+			<a href="" class="btn btn-success">Click</a>
+			<a href="" class="btn btn-info">Click</a>
+		</div>
+
+
+		<div class="alert alert-danger">
+			<button class="close">x</button>
+			hi
+		</div>
+
+		<div class="alert alert-warning">
+			<button class="close">x</button>
+			hi
+		</div>
+
+		<div class="alert alert-success">
+			<button class="close">x</button>
+			hi
+		</div>
+
+		<div class="alert alert-info">
+			<button class="close">x</button>
+			hi
+		</div>
+
+		<div class="well">
+			hi
+		</div>
+
+
+		<div class="panel panel-default">
+		<!-- <div class="panel panel-danger"> -->
+		<!-- <div class="panel panel-success"> -->
+		<!-- <div class="panel panel-warning"> -->
+		<!-- <div class="panel panel-info"> -->
+			<div class="panel-heading">
+				Hello
+			</div>
+			<div class="panel-body">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+			<div class="panel-footer">
+				<button class="btn btn-default">Close</button>
+			</div>
+		</div>
+
+
+
+	</div>
+	<div class="col-lg-6">
+		
+		<ul class="list-group">
+			<li class="list-group-item"><a href="">Home</a></li>
+			<li class="list-group-item"><a href="">About</a></li>
+			<li class="list-group-item"><a href="">Contact</a></li>
+			<li class="list-group-item"><a href="">Gallery</a></li>
+		</ul>
+
+
+		<ul class="pagination">
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">Gallery</a></li>
+		</ul>
+
+
+
+		<ul class="pager">
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">Gallery</a></li>
+		</ul>
+
+
+		<ul class="breadcrumb">
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">Gallery</a></li>
+		</ul>
+
+
+		<ul class="nav nav-tabs">
+			<li><a href="">Home</a></li>
+			<li class="active"><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">Gallery</a></li>
+		</ul>
+
+
+		<ul class="nav nav-pills">
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li class="active"><a href="">Contact</a></li>
+			<li><a href="">Gallery</a></li>
+		</ul>
+
+
+		<div class="col-lg-4">
+			<img src="img/36307.jpg" class="img-responsive img-thumbnail">
+		</div>
+
+		<div class="col-lg-4">
+			<img src="img/36307.jpg" class="img-responsive img-circle">
+		</div>
+
+		<div class="col-lg-4">
+			<img src="img/36307.jpg" class="img-responsive img-rounded">
+		</div>
+
+		<div class="label label-danger">
+		<!-- <div class="label label-warning"> -->
+		<!-- <div class="label label-success"> -->
+		<!-- <div class="label label-info"> -->
+			helllo
+			<span class="badge">5</span>
+		</div>
+
+
+
+
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
