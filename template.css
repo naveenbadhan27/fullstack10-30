@@ -1,0 +1,193 @@
+body,html
+{
+	scroll-behavior: smooth;
+}
+.pad-0
+{
+	padding: 0px !important;
+}
+
+
+
+.navbar-default
+{
+	width: 100% !important;
+	position: absolute !important;
+	background: rgb(1,1,1,.4) !important;
+	z-index: 2;
+	/*padding: 10px;*/
+}
+.navbar-brand
+{
+	position: absolute;
+	height: 75px !important;
+	top: -7px;
+	transition: .5s;
+	left: 10px;
+}
+.navbar-brand:hover
+{
+	height: 80px !important;
+	top: -10px;
+	left: 7px;
+}
+.navbar-nav li
+{
+	padding: 5px 15px;
+}
+.navbar-nav li a
+{
+	color: white !important;
+	font-family: gabriola;
+	font-size: 20px;
+}
+.navbar-nav li a .text
+{
+	display: none;
+	/*display: block;*/
+	position: absolute;
+	margin-left: -10px;
+}
+.navbar-nav li:hover a .text
+{
+	display: block;
+}
+.home
+{
+	height: 650px;
+	background: url('image/bg.jpg');
+	background-size: 100%;
+	background-position: center;
+}
+.myformposition
+{
+	margin-top: 300px;
+	background: rgb(1,1,1,.5);
+	padding: 25px;
+	border-radius: 5px;
+}
+.myformposition .form-group
+{
+	padding: 2px;
+}
+.myinput
+{
+	height: 45px !important;
+	padding: 15px !important;
+	font-size: 17px !important;
+	position: relative;
+	z-index: 2;
+}
+.about
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.heading
+{
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: arial;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.gal1
+{
+	height: 150px;
+	/*border:1px solid black;*/
+	overflow: hidden;
+	padding: 0px !important;
+}
+.sub-head
+{
+	text-align: center;
+	text-transform: uppercase !important;
+}
+.text-head
+{
+	text-align: center;
+	font-size: 16px;
+	font-family: arial;
+}
+.contact
+{
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+.footer
+{
+	background: #2d2d2e;
+	color: white !important;
+}
+.footer a
+{
+	color: white !important;
+}
+
+
+@media only screen and (max-width: 1000px)
+{
+	.pad-0
+	{
+		padding: 0px !important;
+		padding-bottom: 20px !important;
+	}
+	.myformposition
+	{
+		margin-top: 100px;
+	}
+	.home
+	{
+		height: 650px;
+		background: url('image/bg.jpg');
+		background-size: auto 100%;
+		background-position: center;
+	}
+	.gal1
+	{
+		height: 200px;
+		/*border:1px solid black;*/
+		overflow: hidden;
+		padding: 0px !important;
+	}
+	.none
+	{
+		display: none;
+	}
+
+
+}
+
+.test
+{
+	padding-top: 20px;
+	padding-bottom: 50px;
+	background: #332b78;
+	color: white;
+}
+.box
+{
+	background: rgb(1,1,1,.4);
+	padding: 20px;
+	font-size: 18px;
+	font-family: arial;
+	line-height: 20px;
+}
+.txt
+{
+	font-size: 20px;
+	padding: 15px;
+}
+
+
+@media only screen and (max-width: 700px)
+{
+
+	.gal1
+	{
+		height: 150px;
+	}
+
+
+}
