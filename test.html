@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.box1
+		{
+			width: 20%;
+
+		}
+		.form-ctr
+		{
+			width: 100%;
+			font-size: 18px;
+			padding: 5px;
+			margin-bottom: 5px;
+			border-radius: 5px;
+			border:1px solid grey;
+		}
+		#qty
+		{
+			display: none;
+		}
+		.btn
+		{
+			font-size: 18px;
+			padding: 10px 15px;
+			background: linear-gradient(to left, maroon, black);
+			color: white;
+			border-radius: 5px;
+			border:0px;
+		}
+		.box2
+		{
+			width: 80%;
+			float: right;
+		}
+		.box2 table
+		{
+			width: 80%;
+			margin: auto;
+		}
+		table,tr,td
+		{
+			border:1px solid grey;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+
+		var cart = '';
+
+		function add(){
+				var proname = document.getElementById('name').value;
+				var proprice = parseFloat(document.getElementById('price').value);
+				var proty = document.getElementById('qty').value;
+				var proqty = parseFloat(document.getElementById('qty').value);
+				if (proname == '' || proqty < 0 || proty == '' || proprice < 0) {
+					alert('Please Validate data with enter while filling field');
+				}else{
+						var linecart = '<tr><td>'+proname+'</td><td>'+proprice+'</td><td>'+proqty+'</td><td>'+proprice*proqty+'</td></tr>';
+						cart += linecart;
+						document.getElementById('data').innerHTML = linecart;
+				}
+		}
+
+
+
+
+			function checkname(){
+				var proname = document.getElementById('name').value;
+				var x = event.which || event.keyCode;
+				if (x == 13) {
+					if(proname == 'apple' || proname == 'banana' || proname == 'mango')
+					{
+							document.getElementById('price').focus();
+					}else
+					{
+						alert('No Product Found');
+					}
+				}
+			}
+
+			function checkprice(){
+				var proprice = parseFloat(document.getElementById('price').value);
+				var x = event.which || event.keyCode;
+				if (x == 13) {
+					if(proprice > 0)
+					{
+							document.getElementById('qty').style.display='block';
+							document.getElementById('qty').focus();
+					}else
+					{
+						alert('Value should be positive');
+					}
+				}
+			}
+
+
+			function checkqty(){
+				var proqty = parseFloat(document.getElementById('qty').value);
+				var x = event.which || event.keyCode;
+				if (x == 13) {
+					if(proqty > 0)
+					{
+							document.getElementById('btn').focus();
+					}else
+					{
+						alert('Value should be positive');
+					}
+				}
+			}
+
+
+
+	</script>
+</head>
+<body>
+<div class="box2">
+	<table>
+		<tr>
+			<td>Name</td>
+			<td>Price</td>
+			<td>Qty</td>
+			<td>Total</td>
+		</tr>
+		<tbody id="data"></tbody>
+	</table>
+</div>
+
+
+
+<div class="box1">
+
+<input type="text" onkeyup="checkname()" id="name" class="form-ctr" placeholder="Fill Name">
+
+</div>
+
+<div class="box1">
+
+<input type="text" onkeyup="checkprice()" id="price" class="form-ctr" placeholder="Fill Price">
+
+</div>
+
+<div class="box1">
+
+<input type="text" onkeyup="checkqty()" id="qty" class="form-ctr" placeholder="Fill Quantity">
+
+</div>
+
+<div class="box1">
+	
+	<button type="button" id="btn" onclick="add()" class="btn">Add to cart</button>
+
+</div>
+
+
+
+</body>
+</html>
