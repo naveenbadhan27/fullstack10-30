@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+	<ul class="nav navbar-nav">
+		<li><a href="/">Home</a></li>
+		<li><a href="/About">About</a></li>
+	</ul>
+</nav>
+<!-- 	
+	<% %>
+	<%= %>
+-->
+<!-- 	<%= Name %>
+	<%= Class %>
+	<%= Contact %>
+	<%= data.length %>
+ -->
+<!-- 	<% for(var i = 0; i < 10; i++){ %>
+		<% if(i % 2 != 0){ %>
+			<h2><%= i %></h2>
+		<% } %>
+	<% } %> -->
+
+
+	<form class="col-lg-4" action="/formsubmit" method="post">
+		<div class="form-group">
+			<input type="text" name="Name" placeholder="Fill your name" class="form-control">
+		</div>
+		<div class="form-group">
+			<input type="email" name="Email" placeholder="Fill your email" class="form-control">
+		</div>
+		<div class="form-group">
+			<input type="password" name="Password" placeholder="Fill your password" class="form-control">
+		</div>
+		<div class="form-group">
+			<input type="tel" name="Contact" placeholder="Fill your contact" class="form-control">
+		</div>
+		<div class="form-group">
+			<input type="submit" value="Submit Data" class="btn btn-info">
+		</div>
+	</form>
+
+	<div class="col-lg-8">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<td>Name</td>
+					<td>Email</td>
+					<td>Password</td>
+					<td>Contact</td>
+					<td colspan="2" align="center">Action</td>
+				</tr>
+			</thead>
+			<tbody>
+				<% for(var i = 0; i < data.length; i++){ %>
+					<tr>
+						<td><%= data[i].Name %></td>
+						<td><%= data[i].Email %></td>
+						<td><%= data[i].Password %></td>
+						<td><%= data[i].Contact %></td>
+						<td>
+							<form action="/edit" method="post">
+								<input type="hidden" name="id" value="<%= data[i]._id %>" readonly>
+								<button type="submit" class="btn btn-success">
+									<span class="glyphicon glyphicon-pencil"></span>
+								</button>
+							</form>
+						</td>
+						<td>
+							<form action="/delete" method="post">
+								<input type="hidden" name="id" value="<%= data[i]._id %>" readonly>
+								<button type="submit" class="btn btn-danger">
+									<span class="glyphicon glyphicon-trash"></span>
+								</button>
+							</form>
+						</td>
+					</tr>
+				<% } %>				
+			</tbody>
+		</table>
+	</div>
+
+
+</body>
+</html>
