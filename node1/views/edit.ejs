@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+	<ul class="nav navbar-nav">
+		<li><a href="/">Home</a></li>
+		<li><a href="/About">About</a></li>
+	</ul>
+</nav>
+
+	<form class="col-lg-4 col-lg-offset-4" action="/formupdate" method="post">
+		<div class="form-group">
+			<input type="hidden" name="id"  value="<%= data._id %>" readonly required>
+			<input type="text" name="Name" placeholder="Fill your name" class="form-control" value="<%= data.Name %>">
+		</div>
+		<div class="form-group">
+			<input type="email" name="Email" placeholder="Fill your email" class="form-control"  value="<%= data.Email %>">
+		</div>
+		<div class="form-group">
+			<input type="password" name="Password" placeholder="Fill your password" class="form-control"  value="<%= data.Password %>">
+		</div>
+		<div class="form-group">
+			<input type="tel" name="Contact" placeholder="Fill your contact" class="form-control"  value="<%= data.Contact %>">
+		</div>
+		<div class="form-group">
+			<input type="submit" value="Submit Data" class="btn btn-info">
+		</div>
+	</form>
+
+
+</body>
+</html>
