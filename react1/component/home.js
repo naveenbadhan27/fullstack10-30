@@ -43,6 +43,21 @@ function getuserdata(){
 }
 
 
+function deleteuser(x){
+	Axios.post('http://localhost:30/deletedata',{id:x}).then(function(succ){
+		if(succ.data == true){
+			alert('Deleted');
+			getuserdata()
+		}else{
+			alert('Error');
+		}
+	})
+}
+
+function edituser(x) {
+	window.location.href='/Edit/?id='+x;
+}
+
 useEffect(() => {
 	getuserdata();
 }, [])
@@ -83,6 +98,11 @@ useEffect(() => {
 								<td>{row.Name}</td>
 								<td>{row.Email}</td>
 								<td>{row.Password}</td>
+								<td>
+									<button onClick={() => deleteuser(row._id)} className="btn btn-danger"><span className="glyphicon glyphicon-trash"></span></button>
+									<button onClick={() => edituser(row._id)} className="btn btn-info"><span className="glyphicon glyphicon-pencil"></span></button>
+									
+								</td>
 							</tr>
 						))}
 					</tbody>
