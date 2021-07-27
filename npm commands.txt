@@ -1,0 +1,25 @@
+node -v
+npm -v
+npm init
+npm install express
+npm install mongodb
+npm install mongodb-client
+npm install body-parser
+npm install method-override
+npm install cors
+npm install -g nodemon
+npm install --save-dev nodemon
+npm install ejs
+
+
+npm install create-react-app
+npx create-react-app prac2
+
+
+npm  install react-router-dom
+npm install axios
+npm install nodemailer
+
+
+npm install chart.js
+npm install react-chartjs-2
